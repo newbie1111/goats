@@ -8,6 +8,13 @@ type Orderable interface {
 }
 
 /*
+Complex is an interface defines complex number (approximated on a computer).
+*/
+type Complex interface {
+	Real | ~complex64 | ~complex128
+}
+
+/*
 Real is an interface defines Real number (approximated on a computer).
 */
 type Real interface {
